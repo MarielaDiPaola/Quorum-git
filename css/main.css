@@ -62,23 +62,14 @@ header{
 /*Fin de header*/
 /*Inicio de main*/
 /*Inicio de About en index*/
-#about titular-main {
-    font-family: 'Roboto' , sans-serif;
-    font-size: 30px;
-    color:blue;
-    font-weight: 500;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-} 
-#about h2 { color:blue;
+
+#about h2 {color:blue;
             font-family: 'Roboto', sans-serif;
 }
-#about div { color:black;}
+#about div {color:blue;}
 .parrafo-main{
     font-family: 'Roboto' , sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 100;
     line-height: 1;
     text-align: left;
@@ -141,6 +132,7 @@ section{
 #section-2 h2 {font-family: 'Roboto', sans-serif;}
 .parrafo-main{
     font-family: 'Roboto' , sans-serif;
+    color:blue;
     font-size: 15px;
     font-weight: 100;
     line-height: 1;
