@@ -144,6 +144,13 @@ section{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+.container {
+    background-color:  rgb(210, 218, 233);
+}
+.push-right{
+    display: flex;
+    margin-left: auto;
+}
 .flex-container{
                 padding: 10px;
                 display: flex;
@@ -181,6 +188,11 @@ img{
 .flex-container{
     display:flex;
     justify-content: center;
+}
+.flex-container contador{
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
 }
 .flex-container h3{
     flex-direction: column;
