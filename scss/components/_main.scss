@@ -1,0 +1,108 @@
+
+#about titular-main {
+    font-family: 'Roboto' , sans-serif;
+    font-size: 25px;
+    color:blue;
+    font-weight: 500;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} 
+
+#about div { color:black;}
+.parrafo-main{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1;
+    text-align: left;
+   
+} 
+.flex-container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                 padding: 10px;
+}
+.inline{
+         display: inline-block;
+         padding: 10px;
+         margin: 10px;
+}      
+.img {
+    width: 100%;
+}
+section{
+        margin: 20px 10px 5px 5px;
+}
+.half{
+      width: 300px;
+}
+/*Fin de About*/
+/*Inicio Como es el proceso*/
+#h2
+.parrafo-main{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1;
+    text-align: left;
+    padding: 10px;
+}
+.carousel-inner img{
+    width: 100%;
+    max-height: 460px;
+    }
+.carousel-inner{
+    height: 400px;
+}
+.color-main{
+    color:#f09b09;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.flex-container{
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+            
+}
+.flex-container div{
+                    padding: 30px;
+                    margin: 20px;
+}
+section{
+    margin: 20px 20px 5px 5px;
+}
+/*Fin Como es el proceso*/
+/*Testimonios de clientes*/
+
+#h3 
+
+.flex-container{
+    display:flex;
+    justify-content: center;
+}
+.flex-container h3{
+    flex-direction: column;
+    margin: 10px;
+    background-color:rgb(252, 251, 251);
+    border-radius:30px;
+    padding: 10px;
+}
+h3:hover{
+    background-color:#f7a325;
+}
+#section-3 img:hover {
+   transform: scale(1,1.5);
+}
+#h2{
+    color: blue;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+/*Fin de main*/

@@ -1,0 +1,31 @@
+footer {
+    width: auto;
+    margin:auto;
+    background: linear-gradient(to left,hsl(36, 93%, 56%),rgb(252, 251, 251));
+    
+    background-size:contain;
+    font-family:'Roboto', sans-serif;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.footer h4 {
+    color: blue;
+    font-family:'Roboto', sans-serif;
+}
+ul li{
+    font-family:'Roboto', sans-serif;
+    color: blue;
+    display: block;
+}             
+.half{
+    width: 200px;
+} 
+.footer-logo {
+    margin-left: 5px;
+} 
+.footer-logo img {
+    width: 150px;
+    margin-top: 5px;
+} 
