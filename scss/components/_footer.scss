@@ -1,16 +1,37 @@
 footer {
     width: auto;
     margin:auto;
-    background: linear-gradient(to left,hsl(36, 93%, 56%),rgb(252, 251, 251));
-    
+    background: linear-gradient(to left,hsl(36, 93%, 56%),rgb(253, 253, 253));
     background-size:contain;
     font-family:'Roboto', sans-serif;
 }
 .footer-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:(1fr 2fr 2fr 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+    "logo . contacto . social";
+}
+.footer-social{
+    text-align:end;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1 ;
+    grid-row-end: 2 ;
+    
+} 
+.footer-contacto{
+    text-align:center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 .footer h4 {
+    color: blue;
+    font-family:'Roboto', sans-serif;
+}
+.footer h6{
     color: blue;
     font-family:'Roboto', sans-serif;
 }
@@ -28,4 +49,4 @@ ul li{
 .footer-logo img {
     width: 150px;
     margin-top: 5px;
-} 
+}

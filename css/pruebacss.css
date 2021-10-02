@@ -1,13 +1,66 @@
-section {
-  width: 200px;
-  color: #f1e5ce;
+@charset "UTF-8";
+footer {
+  width: auto;
+  margin: auto;
+  background: linear-gradient(to left, #f7a426, #fdfdfd);
+  background-size: contain;
   font-family: 'Roboto', sans-serif; }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "logo . contacto . social"; }
+
+.footer-social {
+  text-align: end;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.footer-contacto {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.footer h4 {
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+.footer h6 {
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+ul li {
+  font-family: 'Roboto', sans-serif;
+  color: blue;
+  display: block; }
+
+.half {
+  width: 200px; }
+
+.footer-logo {
+  margin-left: 5px; }
+
+.footer-logo img {
+  width: 150px;
+  margin-top: 5px; }
+
+/*index*/
+/*reset*/
+body {
+  font-family: 'Roboto' sans-serif;
+  margin: 1;
+  padding: 1; }
+
+/*Inicio header*/
 header {
   display: flex;
   width: 80%;
-  margin: auto;
-  /*justify-content: center;*/ }
+  margin: auto; }
 
 .header {
   height: 10vh;
@@ -59,22 +112,16 @@ header {
 #menu #item:hover #desple {
   display: block; }
 
-#about titular-main {
-  font-family: 'Roboto' , sans-serif;
-  font-size: 25px;
+#about h2 {
   color: blue;
-  font-weight: 500;
-  line-height: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: row; }
+  font-family: 'Roboto', sans-serif; }
 
 #about div {
-  color: black; }
+  color: blue; }
 
 .parrafo-main {
   font-family: 'Roboto' , sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 100;
   line-height: 1;
   text-align: left; }
@@ -100,28 +147,64 @@ section {
 .half {
   width: 300px; }
 
-/*Fin de About*/
-/*Inicio Como es el proceso*/
-#h2
+/*Fin de About en index*/
+/*Inicio estilo de sub menu html servicio*/
+#navbar {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: row;
+  justify-content: center;
+  width: 80vw;
+  align-items: flex-start; }
+
+#navbar #item {
+  float: left; }
+
+#navbar #item a {
+  background-color: #ec9d0a;
+  color: ivory;
+  padding: 8px 16px;
+  display: block;
+  font-family: 'Roboto:wght@300' , sans-serif;
+  font-size: 12px;
+  text-decoration: none; }
+
+/*Fin estilo de sub menu html servicio*/
+/*Inicio estilo de sub menu html soluciones*/
+.col-md-6 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*Fin de estilo de sub menu html soluciones*/
+/*Inicio sección Como es el proceso en index*/
+#section-2 h2 {
+  color: blue; }
+
+#section-2 h2 {
+  font-family: 'Roboto', sans-serif; }
+
 .parrafo-main {
   font-family: 'Roboto' , sans-serif;
+  color: blue;
   font-size: 15px;
   font-weight: 100;
   line-height: 1;
   text-align: left;
   padding: 10px; }
 
-.carousel-inner img {
-  width: 100%;
-  max-height: 460px; }
-
-.carousel-inner {
-  height: 400px; }
-
 .color-main {
   color: #f09b09;
   font-family: 'Roboto', sans-serif;
   text-align: center; }
+
+.container {
+  background-color: #d2dae9; }
+
+.push-right {
+  display: flex;
+  margin-left: auto; }
 
 .flex-container {
   padding: 10px;
@@ -137,11 +220,31 @@ section {
   margin: 20px 20px 5px 5px; }
 
 /*Fin Como es el proceso*/
-/*Testimonios de clientes*/
-#h3
+/*Inicio estilo en section html salud*/
+.carousel-inner img {
+  width: 100%;
+  max-height: 460px; }
+
+img {
+  object-fit: cover; }
+
+.carousel-inner {
+  height: 350px; }
+
+/*Fin de estilo en section html salud*/
+/*Inicio Testimonios de clientes en index*/
+#section-3 h3 {
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
 .flex-container {
   display: flex;
   justify-content: center; }
+
+.flex-container contador {
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px; }
 
 .flex-container h3 {
   flex-direction: column;
@@ -156,42 +259,17 @@ h3:hover {
 #section-3 img:hover {
   transform: scale(1, 1.5); }
 
-#h2 {
+h2 {
   color: blue;
   font-family: 'Roboto', sans-serif;
   font-size: 20px; }
 
+.main h6 {
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+/*Fin Testimonios de clientes en index*/
 /*Fin de main*/
-footer {
-  width: auto;
-  margin: auto;
-  background: linear-gradient(to left, #f7a426, #fcfbfb);
-  background-size: contain;
-  font-family: 'Roboto', sans-serif; }
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-
-.footer h4 {
-  color: blue;
-  font-family: 'Roboto', sans-serif; }
-
-ul li {
-  font-family: 'Roboto', sans-serif;
-  color: blue;
-  display: block; }
-
-.half {
-  width: 200px; }
-
-.footer-logo {
-  margin-left: 5px; }
-
-.footer-logo img {
-  width: 150px;
-  margin-top: 5px; }
-
 h1 {
   font-size: 2em;
   color: blue; }

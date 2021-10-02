@@ -1,108 +1,155 @@
-
-#about titular-main {
-    font-family: 'Roboto' , sans-serif;
-    font-size: 25px;
-    color:blue;
-    font-weight: 500;
-    line-height: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-} 
-
-#about div { color:black;}
+#about h2 {color:blue;
+    font-family: 'Roboto', sans-serif;
+}
+#about div {color:blue;}
 .parrafo-main{
-    font-family: 'Roboto' , sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    line-height: 1;
-    text-align: left;
-   
-} 
+font-family: 'Roboto' , sans-serif;
+font-size: 20px;
+font-weight: 100;
+line-height: 1;
+text-align: left;
+}
 .flex-container{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                 padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+         padding: 10px;
 }
 .inline{
-         display: inline-block;
-         padding: 10px;
-         margin: 10px;
+ display: inline-block;
+ padding: 10px;
+ margin: 10px;
 }      
 .img {
-    width: 100%;
+width: 100%;
 }
 section{
-        margin: 20px 10px 5px 5px;
+margin: 20px 10px 5px 5px;
 }
 .half{
-      width: 300px;
+width: 300px;
 }
-/*Fin de About*/
-/*Inicio Como es el proceso*/
-#h2
+/*Fin de About en index*/
+/*Inicio estilo de sub menu html servicio*/
+#navbar{
+display:flex;
+padding: 8px 16px;
+flex-direction: row;
+justify-content: center;
+width: 80vw;
+align-items: flex-start;
+} 
+#navbar #item{
+float: left;
+}
+#navbar #item a {
+background-color:  rgb(236, 157, 10);
+color: ivory;
+padding: 8px 16px;
+display: block;
+font-family:'Roboto:wght@300' , sans-serif; 
+font-size: 12px;
+text-decoration: none;
+}
+/*Fin estilo de sub menu html servicio*/
+/*Inicio estilo de sub menu html soluciones*/
+.col-md-6 {
+width: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+/*Fin de estilo de sub menu html soluciones*/
+
+/*Inicio sección Como es el proceso en index*/
+#section-2 h2 {color: blue;}
+#section-2 h2 {font-family: 'Roboto', sans-serif;}
 .parrafo-main{
-    font-family: 'Roboto' , sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-    line-height: 1;
-    text-align: left;
-    padding: 10px;
-}
-.carousel-inner img{
-    width: 100%;
-    max-height: 460px;
-    }
-.carousel-inner{
-    height: 400px;
+font-family: 'Roboto' , sans-serif;
+color:blue;
+font-size: 15px;
+font-weight: 100;
+line-height: 1;
+text-align: left;
+padding: 10px;
 }
 .color-main{
-    color:#f09b09;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+color:#f09b09;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+}
+.container {
+background-color:  rgb(210, 218, 233);
+}
+.push-right{
+display: flex;
+margin-left: auto;
 }
 .flex-container{
-                padding: 10px;
-                display: flex;
-                flex-direction: row;
-                align-items: stretch;
-            
-}
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+}            
 .flex-container div{
-                    padding: 30px;
-                    margin: 20px;
+            padding: 30px;
+            margin: 20px;
 }
 section{
-    margin: 20px 20px 5px 5px;
+margin: 20px 20px 5px 5px;
 }
 /*Fin Como es el proceso*/
-/*Testimonios de clientes*/
 
-#h3 
+/*Inicio estilo en section html salud*/
+.carousel-inner img{
+width: 100%;
+max-height: 460px;
+}
+img{
+object-fit: cover;
+}
+.carousel-inner{
+height: 350px;
+}
+/*Fin de estilo en section html salud*/
 
+/*Inicio Testimonios de clientes en index*/
+
+#section-3 h3 {
+color: blue;
+font-family:'Roboto', sans-serif;
+}
 .flex-container{
-    display:flex;
-    justify-content: center;
+display:flex;
+justify-content: center;
+}
+.flex-container contador{
+flex-direction: column;
+margin: 10px;
+padding: 10px;
 }
 .flex-container h3{
-    flex-direction: column;
-    margin: 10px;
-    background-color:rgb(252, 251, 251);
-    border-radius:30px;
-    padding: 10px;
+flex-direction: column;
+margin: 10px;
+background-color:rgb(252, 251, 251);
+border-radius:30px;
+padding: 10px;
 }
 h3:hover{
-    background-color:#f7a325;
+background-color:#f7a325;
 }
 #section-3 img:hover {
-   transform: scale(1,1.5);
+transform: scale(1,1.5);
 }
-#h2{
-    color: blue;
-    font-family:'Roboto', sans-serif;
-    font-size: 20px;
+h2{
+color: blue;
+font-family:'Roboto', sans-serif;
+font-size: 20px;
 }
-
+.main h6{
+color: blue;
+font-family:'Roboto', sans-serif;
+}
+/*Fin Testimonios de clientes en index*/
 /*Fin de main*/
