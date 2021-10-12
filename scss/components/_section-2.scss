@@ -1,0 +1,38 @@
+/*Inicio sección Como es el proceso en index*/
+#section-2 h2 {color: blue;}
+#section-2 h2 {font-family: 'Roboto', sans-serif;}
+.parrafo-main{
+    font-family: 'Roboto' , sans-serif;
+    color:blue;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1;
+    text-align: left;
+    padding: 10px;
+}
+.color-main{
+    color:#f09b09;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.container {
+    background-color:  rgb(210, 218, 233);
+}
+.push-right{
+    display: flex;
+    margin-left: auto;
+}
+.flex-container{
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+}            
+.flex-container div{
+                    padding: 30px;
+                    margin: 20px;
+}
+section{
+    margin: 20px 20px 5px 5px;
+}
+/*Fin Como es el proceso*/

@@ -1,0 +1,33 @@
+//--Media querie para body
+@media only screen and (min-width:768px){
+    .flex-container{
+        background-color:rgb(252, 251, 251 );
+        padding:10px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background:linear-gradient(to left,#f7a325,rgb(252, 251, 251));
+        background-size:contain;
+        font-family:'Roboto', sans-serif;
+    }
+}
+@media only screen and (min-width:1024px){
+    .flex-container{
+        background-color: rgb(252, 251, 251);
+        padding:10px;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background:linear-gradient(to left,#f7a325,rgb(252, 251, 251));
+        background-size:contain;
+        font-family:'Roboto', sans-serif;
+    }
+}

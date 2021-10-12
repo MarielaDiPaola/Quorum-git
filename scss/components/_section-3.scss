@@ -1,0 +1,38 @@
+/*Inicio Testimonios de clientes en index*/
+
+#section-3 h3 {
+    color: blue;
+    font-family:'Roboto', sans-serif;
+}
+.flex-container{
+    display:flex;
+    justify-content: center;
+}
+.flex-container contador{
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-container h3{
+    flex-direction: column;
+    margin: 10px;
+    background-color:rgb(252, 251, 251);
+    border-radius:30px;
+    padding: 10px;
+}
+h3:hover{
+    background-color:#f7a325;
+}
+#section-3 img:hover {
+   transform: scale(1,1.5);
+}
+h2{
+    color: blue;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+}
+.main h6{
+    color: blue;
+    font-family:'Roboto', sans-serif;
+}
+/*Fin Testimonios de clientes en index*/

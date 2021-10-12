@@ -1,0 +1,33 @@
+#about h2 {color:blue;
+    font-family: 'Roboto', sans-serif;
+}
+#about div {color:blue;}
+.parrafo-main{
+font-family: 'Roboto' , sans-serif;
+font-size: 20px;
+font-weight: 100;
+line-height: 1;
+text-align: left;
+}
+.flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+}
+.inline{
+ display: inline-block;
+ padding: 10px;
+ margin: 10px;
+}      
+.img {
+width: 100%;
+}
+section{
+margin: 20px 10px 5px 5px;
+}
+.half{
+width: 300px;
+}
+/*Fin de About en index*/

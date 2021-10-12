@@ -1,54 +1,4 @@
 @charset "UTF-8";
-footer {
-  width: auto;
-  margin: auto;
-  background: linear-gradient(to left, #f7a426, #fdfdfd);
-  background-size: contain;
-  font-family: 'Roboto', sans-serif; }
-
-.footer-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas: "logo . contacto . social"; }
-
-.footer-social {
-  text-align: end;
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 2; }
-
-.footer-contacto {
-  text-align: center;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2; }
-
-.footer h4 {
-  color: blue;
-  font-family: 'Roboto', sans-serif; }
-
-.footer h6 {
-  color: blue;
-  font-family: 'Roboto', sans-serif; }
-
-ul li {
-  font-family: 'Roboto', sans-serif;
-  color: blue;
-  display: block; }
-
-.half {
-  width: 200px; }
-
-.footer-logo {
-  margin-left: 5px; }
-
-.footer-logo img {
-  width: 150px;
-  margin-top: 5px; }
-
 /*index*/
 /*reset*/
 body {
@@ -131,7 +81,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px; }
+  padding: 50px; }
 
 .inline {
   display: inline-block;
@@ -148,39 +98,6 @@ section {
   width: 300px; }
 
 /*Fin de About en index*/
-/*Inicio estilo de sub menu html servicio*/
-#navbar {
-  display: flex;
-  padding: 8px 16px;
-  flex-direction: row;
-  justify-content: center;
-  width: 80vw;
-  align-items: flex-start; }
-
-#navbar #item {
-  float: left; }
-
-#navbar #item a {
-  background-color: #ec9d0a;
-  color: ivory;
-  padding: 8px 16px;
-  display: block;
-  font-family: 'Roboto:wght@300' , sans-serif;
-  font-size: 12px;
-  text-decoration: none; }
-
-/*Fin estilo de sub menu html servicio*/
-/*Inicio estilo de sub menu html soluciones*/
-.col-md-6 {
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.main-soluciones {
-  background-color: #f9f9fc; }
-
-/*Fin de estilo de sub menu html soluciones*/
 /*Inicio sección Como es el proceso en index*/
 #section-2 h2 {
   color: blue; }
@@ -223,21 +140,6 @@ section {
   margin: 20px 20px 5px 5px; }
 
 /*Fin Como es el proceso*/
-/*Inicio estilo en section html salud*/
-.main-servicios {
-  background-color: #f9f9fc; }
-
-.carousel-inner img {
-  width: 100%;
-  max-height: 460px; }
-
-img {
-  object-fit: cover; }
-
-.carousel-inner {
-  height: 350px; }
-
-/*Fin de estilo en section html salud*/
 /*Inicio Testimonios de clientes en index*/
 #section-3 h3 {
   color: blue;
@@ -275,15 +177,119 @@ h2 {
   font-family: 'Roboto', sans-serif; }
 
 /*Fin Testimonios de clientes en index*/
+/*Inicio estilo de sub menu html servicio*/
+#navbar {
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: row;
+  justify-content: center;
+  width: 80vw;
+  align-items: flex-start; }
+
+#navbar #item {
+  float: left; }
+
+#navbar #item a {
+  background-color: #ec9d0a;
+  color: ivory;
+  padding: 8px 16px;
+  display: block;
+  font-family: 'Roboto:wght@300' , sans-serif;
+  font-size: 12px;
+  text-decoration: none; }
+
+/*Fin estilo de sub menu html servicio*/
+/*Inicio estilo de sub menu html soluciones*/
+.col-md-6 {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.main-soluciones {
+  background-color: #f9f9fc; }
+
+/*Fin de estilo de sub menu html soluciones*/
+/*Inicio estilo en section html salud*/
+.main-servicios {
+  background-color: #f9f9fc; }
+
+/*Fin de estilo en section html salud*/
 /*Fin de main*/
-h1 {
-  font-size: 2em;
-  color: blue; }
+footer {
+  width: auto;
+  margin: auto;
+  background: linear-gradient(to left, #f7a426, #fdfdfd);
+  background-size: contain;
+  font-family: 'Roboto', sans-serif; }
 
-h2 {
-  font-size: 4em;
-  color: blue; }
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas: "logo.contacto.social"; }
 
-h3 {
-  font-size: 6em;
-  color: blue; }
+.footer-social {
+  text-align: end;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.footer-contacto {
+  text-align: center;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; }
+
+.footer h4 {
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+.footer h6 {
+  color: blue;
+  font-family: 'Roboto', sans-serif; }
+
+ul li {
+  font-family: 'Roboto', sans-serif;
+  color: blue;
+  display: block; }
+
+.half {
+  width: 200px; }
+
+.footer-logo {
+  margin-left: 5px; }
+
+.footer-logo img {
+  width: 150px;
+  margin-top: 5px; }
+
+@media only screen and (min-width: 768px) {
+  .flex-container {
+    background-color: #fcfbfb;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(to left, #f7a325, #fcfbfb);
+    background-size: contain;
+    font-family: 'Roboto', sans-serif; } }
+
+@media only screen and (min-width: 1024px) {
+  .flex-container {
+    background-color: #fcfbfb;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(to left, #f7a325, #fcfbfb);
+    background-size: contain;
+    font-family: 'Roboto', sans-serif; } }

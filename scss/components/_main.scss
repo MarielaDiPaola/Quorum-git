@@ -1,36 +1,3 @@
-#about h2 {color:blue;
-    font-family: 'Roboto', sans-serif;
-}
-#about div {color:blue;}
-.parrafo-main{
-font-family: 'Roboto' , sans-serif;
-font-size: 20px;
-font-weight: 100;
-line-height: 1;
-text-align: left;
-}
-.flex-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-         padding: 10px;
-}
-.inline{
- display: inline-block;
- padding: 10px;
- margin: 10px;
-}      
-.img {
-width: 100%;
-}
-section{
-margin: 20px 10px 5px 5px;
-}
-.half{
-width: 300px;
-}
-/*Fin de About en index*/
 /*Inicio estilo de sub menu html servicio*/
 #navbar{
 display:flex;
@@ -65,97 +32,11 @@ margin-right: auto;
 }
 /*Fin de estilo de sub menu html soluciones*/
 
-/*Inicio sección Como es el proceso en index*/
-#section-2 h2 {color: blue;}
-#section-2 h2 {font-family: 'Roboto', sans-serif;}
-.parrafo-main{
-font-family: 'Roboto' , sans-serif;
-color:blue;
-font-size: 15px;
-font-weight: 100;
-line-height: 1;
-text-align: left;
-padding: 10px;
-}
-.color-main{
-color:#f09b09;
-font-family: 'Roboto', sans-serif;
-text-align: center;
-}
-.container {
-background-color:  rgb(210, 218, 233);
-}
-.push-right{
-display: flex;
-margin-left: auto;
-}
-.flex-container{
-        padding: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-}            
-.flex-container div{
-            padding: 30px;
-            margin: 20px;
-}
-section{
-margin: 20px 20px 5px 5px;
-}
-/*Fin Como es el proceso*/
-
 /*Inicio estilo en section html salud*/
 .main-servicios{
         background-color: rgb(249, 249, 252);
 }
-.carousel-inner img{
-width: 100%;
-max-height: 460px;
-}
-img{
-object-fit: cover;
-}
-.carousel-inner{
-height: 350px;
-}
+
 /*Fin de estilo en section html salud*/
 
-/*Inicio Testimonios de clientes en index*/
-
-#section-3 h3 {
-color: blue;
-font-family:'Roboto', sans-serif;
-}
-.flex-container{
-display:flex;
-justify-content: center;
-}
-.flex-container contador{
-flex-direction: column;
-margin: 10px;
-padding: 10px;
-}
-.flex-container h3{
-flex-direction: column;
-margin: 10px;
-background-color:rgb(252, 251, 251);
-border-radius:30px;
-padding: 10px;
-}
-h3:hover{
-background-color:#f7a325;
-}
-#section-3 img:hover {
-transform: scale(1,1.5);
-}
-h2{
-color: blue;
-font-family:'Roboto', sans-serif;
-font-size: 20px;
-}
-.main h6{
-color: blue;
-font-family:'Roboto', sans-serif;
-}
-/*Fin Testimonios de clientes en index*/
 /*Fin de main*/
