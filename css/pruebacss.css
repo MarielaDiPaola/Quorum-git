@@ -6,61 +6,6 @@ body {
   margin: 1;
   padding: 1; }
 
-/*Inicio header*/
-header {
-  display: flex;
-  width: 80%;
-  margin: auto; }
-
-.header {
-  height: 10vh;
-  background-color: #f7a426;
-  background-size: contain; }
-
-.header-logo {
-  margin-left: 5px; }
-
-.header-logo img {
-  width: 90px;
-  margin-top: 5px; }
-
-.half {
-  width: 100px;
-  display: inline-block; }
-
-#menu {
-  display: flex;
-  justify-content: flex-end;
-  width: 80vw;
-  align-items: center; }
-
-#menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-#menu #item {
-  float: left; }
-
-#menu #item a {
-  background-color: #f7a426;
-  color: ivory;
-  padding: 10px 20px;
-  display: block;
-  font-family: 'Roboto' , sans-serif;
-  font-size: 15px;
-  text-decoration: none; }
-
-#menu #desple {
-  display: none;
-  position: absolute; }
-
-#menu #item a:hover {
-  background-color: #ec9d0a;
-  color: #faf6f8; }
-
-#menu #item:hover #desple {
-  display: block; }
 
 #about h2 {
   color: blue;

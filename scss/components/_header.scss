@@ -5,25 +5,66 @@ body {
     margin: 1;
     padding: 1;
 }
-
 /*Inicio header*/
 header{
-    display: flex;
-    width: 80%;
-    margin: auto;
-}  
-.header {height: 10vh;
+    width: 100%;
     background-color: hsl(36, 93%, 56%);
-    background-size: contain ;}
+}  
+#btn-menu{
+    display: none;
+}
+header label {
+    display: none;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover{
+    cursor: pointer;
+    background:rgba(172, 102, 23, 0.199) ;
+}
+#menu ul{
+    margin:0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#menu #item {
+    border-right: 1px solid #fff;
+    float: left;
+}
+#menu #item:hover{
+    background: rgba(172, 102, 23, 0.199);
+}
+#menu #item a {
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    background-color:hsl(36, 56%, 42%) ;
+    text-decoration: none;
+    font-family: 'Roboto' , sans-serif;
+}
+#menu #desple{
+    display: none;
+    position: absolute;
+}
+#menu #item a:hover{
+    background-color:hsl(36, 56%, 42%) ;
+    color: #fff;
+}
+#menu #item:hover #desple{
+    display: block;
+}
 .header-logo {
     margin-left: 5px;
-} 
+}
 .header-logo img {
     width: 90px;
     margin-top: 5px;
 }
 .half{
-    width:100px;display: inline-block;
+    width:100px;
+    display: inline-block;
 }
- 
 
