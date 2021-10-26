@@ -6,8 +6,70 @@ body {
     padding: 1;
 }
 
-/*Inicio header*/
 
+/*Inicio header*/
+header{
+    width: 100%;
+    background: linear-gradient(to left,hsl(36, 93%, 56%),rgb(253, 253, 253));
+}  
+.header-logo {
+    margin-left: 5px;
+}
+.header-logo img {
+    width: 90px;
+    margin-top: 5px;
+}
+.half{
+    width:100px;
+    display: inline-block;
+}
+#btn-menu{
+    display: none;
+}
+header label {
+    display: none;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+header label:hover{
+    cursor: pointer;
+    background:rgba(236, 157, 10, 0.876) ;
+
+}
+#menu ul{
+    margin:0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#menu #item {
+    border-right: 1px solid #fff;
+    float: left;
+}
+#menu #item:hover{
+    background: rgba(228, 150, 6, 0.774);
+}
+#menu #item a {
+    display: block;
+    padding: 15px 20px;
+    color:#fff;
+    background-color:hsl(36, 93%, 56%) ;
+    text-decoration: none;
+    font-family: 'Roboto' , sans-serif;
+}
+#menu #desple{
+    display: none;
+    position: absolute;
+}
+#menu #item a:hover{
+    background-color:hsl(36, 81%, 54%) ;
+    color: #fff;
+}
+#menu #item:hover #desple{
+    display: block;
+}
 
 /*Fin de header*/
 /*Inicio de main*/
@@ -46,31 +108,10 @@ section{
       width: 300px;
 }
 /*Fin de About en index*/
-/*Inicio estilo de sub menu html servicio*/
-#navbar{
-    display:flex;
-    padding: 8px 16px;
-    flex-direction: row;
-    justify-content: center;
-    width: 80vw;
-    align-items: flex-start;
-} 
-#navbar #item{
-    float: left;
-}
-#navbar #item a {
-    background-color:  rgb(236, 157, 10);
-    color: ivory;
-    padding: 8px 16px;
-    display: block;
-    font-family:'Roboto:wght@300' , sans-serif; 
-    font-size: 12px;
-    text-decoration: none;
-}
-/*Fin estilo de sub menu html servicio*/
+
 /*Inicio estilo de sub menu html soluciones*/
-.col-md-6 {
-    width: 50em;
+.container {
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -187,48 +228,105 @@ ul li{
 
 /*=================================*/
 /*===Media querie para body======*/
-@media only screen and (max-width:768px){
+@media only screen and (max-width:1024px){
     header label {
         display: block;
     }
-    .menu {
-        position:absolute;
-        background: hsl(36, 93%, 56%);
-        width: 70%;
+    #menu {
+        position: absolute;
+        background:rgba(236, 157, 10, 0.876);
+        width: 60%;
         margin-left: -70%;
     }
-    .menu ul {
+    #menu ul {
         flex-direction: column;
     }
-    .menu li {
-        border: top 1px solid #fff;
+    #menu #item{
+        border-top: 1px solid #fff;
     }
-    #btn-menu:checked ~ .menu {
-        margin: 0;
+    #menu #item {
+        border-right: 1px solid #fff;
+        float: left;
     }
-    
-    
-    .flex-container{
-        background-color:rgb(252, 251, 251 );
-        padding:10px;
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
+    #menu #desple{
+        display: none;
+        position: absolute;
     }
-    .footer-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        background:linear-gradient(to left,#f7a325,rgb(252, 251, 251));
-        background-size:contain;
-        font-family:'Roboto', sans-serif;
+    #menu #item a:hover{
+        background-color:rgba(228, 150, 6, 0.774) ;
+        color: #fff;
     }
-}
-@media only screen and (min-width:1024px){
+    #menu #item:hover #desple{
+        display: block;
+    }
+    #btn-menu:checked ~ #menu {
+        margin:0;
+        transition: all 0.5s;
+    }
+       
     .flex-container{
         background-color: rgb(252, 251, 251);
         padding:10px;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .col-md-6{
+        width: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background:linear-gradient(to left,#f7a325,rgb(252, 251, 251));
+        background-size:contain;
+        font-family:'Roboto', sans-serif;
+    }
+}
+
+@media only screen and (max-width:768px){
+    header label {
+        display: block;
+    }
+    #menu {
+        position: absolute;
+        background:rgba(236, 157, 10, 0.876);
+        width: 60%;
+        margin-left: -70%;
+    }
+    #menu ul {
+        flex-direction: column;
+    }
+    #menu #item{
+        border-top: 1px solid #fff;
+    }
+    #menu #item {
+        border-right: 1px solid #fff;
+        float: left;
+    }
+    #menu #desple{
+        display: none;
+        position: absolute;
+    }
+    #menu #item a:hover{
+        background-color:rgba(228, 150, 6, 0.774);
+        color: #fff;
+    }
+    #menu #item:hover #desple{
+        display: block;
+    }
+    #btn-menu:checked ~ #menu {
+        margin:0;
+        transition: all 0.5s;
+    }
+           
+    .flex-container{
+        background-color:rgb(252, 251, 251 );
+        padding:10px;
+        display: flex;
+        flex-wrap: wrap;
         align-items: stretch;
     }
     .footer-container{
@@ -239,3 +337,4 @@ ul li{
         font-family:'Roboto', sans-serif;
     }
 }
+

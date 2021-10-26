@@ -1,5 +1,6 @@
 //--Media querie para body
 @media only screen and (max-width:1024px){
+    /*Inicio header*/
     header{
         flex-direction: column;
         width: 50px;
@@ -9,42 +10,142 @@
         width: 30px;
         margin-top: 5px;
     }
-    
-        
+    header label {
+        display: block;
+    }
+    #menu {
+        position: absolute;
+        background:hsl(36, 93%, 56%) ;
+        width: 60%;
+        margin-left: -70%;
+    }
+    #menu ul {
+        flex-direction: column;
+    }
+    #menu #item{
+        border-top: 1px solid #fff;
+    }
+    #menu #item {
+        border-right: 1px solid #fff;
+        float: left;
+    }
+    #menu #desple{
+        display: none;
+        position: absolute;
+    }
+    #menu #item a:hover{
+        background-color:hsl(36, 93%, 56%) ;
+        color: #fff;
+    }
+    #menu #item:hover #desple{
+        display: block;
+    }
+    #btn-menu:checked ~ #menu {
+        margin:0;
+        transition: all 0.5s;
+    }
+    /*Fin de header*/
+    /*Inicio de main*/
     .flex-container{
         background-color: rgb(252, 251, 251);
-        padding: 50px;
+        padding: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: wrap;
         align-items: stretch;
     }
     .flex-container div{
         padding: 30px;
         margin: 20px;
-    }    
+    }
+     /*Fin de main*/
+    /*Inicio estilo de sub menu html servicio*/
+    #navbar{
+        display:flex;
+        padding: 8px 16px;
+        flex-direction: column;
+        justify-content: center;
+        width: 80vw;
+        align-items: flex-start;
+    } 
+    #navbar #item{
+        float: left;
+    }
+    #navbar #item a {
+        background-color:  rgb(236, 157, 10);
+        color: ivory;
+        padding: 8px 16px;
+        display: block;
+        font-family:'Roboto', sans-serif; 
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .container {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*Fin estilo de sub menu html servicio*/
+    /*Inicio estilo de sub menu html soluciones*/    
     .col-md-6 {
         width: 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }      
+    }
+    .main-soluciones{
+        background-color: rgb(249, 249, 252);
+    }
+    /*Inicio de Footer*/
     .footer-container{
         display: grid;
-        grid-template-columns:(1fr 1fr 1fr);
-        grid-gap: 20px;
-        grid-template-areas: 
-        "logo.contacto.social";
+        grid-template-columns: repeat(3, 1fr);
         background:linear-gradient(to left,#f7a325,rgb(252, 251, 251));
         background-size:contain;
         font-family:'Roboto', sans-serif;
     }
 }
 @media only screen and (max-width:768px){
+    header label {
+        display: block;
+    }
+    #menu {
+        position: absolute;
+        background:hsl(36, 93%, 56%) ;
+        width: 60%;
+        margin-left: -70%;
+    }
+    #menu ul {
+        flex-direction: column;
+    }
+    #menu #item{
+        border-top: 1px solid #fff;
+    }
+    #menu #item {
+        border-right: 1px solid #fff;
+        float: left;
+    }
+    #menu #desple{
+        display: none;
+        position: absolute;
+    }
+    #menu #item a:hover{
+        background-color:hsl(36, 93%, 56%) ;
+        color: #fff;
+    }
+    #menu #item:hover #desple{
+        display: block;
+    }
+    #btn-menu:checked ~ #menu {
+        margin:0;
+        transition: all 0.5s;
+    }
+    
     .flex-container{
         background-color:rgb(252, 251, 251 );
         padding:10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: wrap;
         align-items: stretch;
     }
     
@@ -56,8 +157,7 @@
     }    
     .footer-container{
         display: grid;
-        grid-template-columns:(1fr 1fr 1fr 1fr);
-        grid-gap: 20px;
+        grid-template-columns:repeat (3, 1fr);
         background:linear-gradient(to left,#f7a325,rgb(252, 251, 251));
         background-size:contain;
         font-family:'Roboto', sans-serif;
